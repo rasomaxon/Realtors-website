@@ -11,24 +11,32 @@
 </head>
 <body>
 	<header>
-		<a href=""><h1 class="logo">LOREM</h1></a>
-		<nav>
+		<a href="">
+			<h1 class="logo">LOREM</h1>
+		</a>
+		<svg class="burger" id="burger" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M2 2L30 2" stroke="#D5C9BE" stroke-width="4" stroke-linecap="round" />
+			<path d="M2 16H30" stroke="#D5C9BE" stroke-width="4" stroke-linecap="round" />
+			<path d="M2 30H30" stroke="#D5C9BE" stroke-width="4" stroke-linecap="round" />
+		</svg>
+
+		<nav id="navMenu">
 			<ul class="menu">
-				<li><a href="/">consectetur</a></li>
-				<li><a href="/">sit amet</a></li>
-				<li><a href="/">eiusmod tempor </a></li>
+				<li><a href="/">Business class</a></li>
+				<li><a href="/">Mortgage</a></li>
+				<li><a href="/">Support</a></li>
 			</ul>
 		</nav>
 	</header>
 	<div class="mainContent">
 		<div class="mainAd">
 			<div class="mainAd_text">
-				<h1>Lorem ipsum<br>dolor sit amet</h1>
-				<p>sed do eiusmod tempor </p>
+				<h1>Modern Residential Complexes</h1>
+				<p>in the Heart of the City</p>
 				<ul class="adList">
-					<li>do <span class="listNumbers">$10 000</span> consectetur elit</li>
-					<li><span class="listNumbers">30%</span> sed do eiusmod tempor</li>
-					<li>do <span class="listNumbers">17%</span> adipiscing elit sed do</li>
+					<li>from <span class="listNumbers">$10 000</span> — starting apartment price</li>
+					<li><span class="listNumbers">30%</span> — best mortgage conditions</li>
+					<li>up to <span class="listNumbers">17%</span> — annual value growth</li>
 				</ul>
 				<button class="orderBtn">ORDER</button>
 			</div>
@@ -37,14 +45,13 @@
 		<div class="middleBlock">
 			<img src="images/apart2.png" alt="">
 				<ul class="MB_list">
-					<li>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor </li>
+					<li>Spacious apartments with panoramic windows</li>
 					<div class="separator"></div>
-					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
+					<li>Gated community with security and video surveillance</li>
 					<div class="separator"></div>
-					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit, sed do eiusmod tempor </li>
+					<li>Well-developed infrastructure: schools, malls, parks</li>
 					<div class="separator"></div>
-					<li>Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
+					<li>Convenient transport access to all city districts</li>
 					<button class="orderBtn MB_btn">ORDER</button>
 				</ul>
 			<img src="images/apart3.png" alt="">
@@ -52,15 +59,15 @@
 		<div class="lowerBlock">
 			<form class="formBlock" action="" method="get">
 				<div class="formContainer">
-					<h1>Consectetur <br>
-						sed do eiusmod </h1>
+					<h1>Request a Callback <br>
+						and Get a Free Consultation</h1>
 					<input class="formField" placeholder="Name" type="text" name="name" id="name" required>
 					<input class="formField" placeholder="E-mail" type="email" name="email" id="email" required>
 					<div class="formCheckbox">
 						<input class="checkbox" type="checkbox" name="Privacy" required>
 						<span>I accept <a href="" style="color: inherit;">Privacy policy</a></span>
 					</div>
-					<button class="formBtn" type="submit">SUBMIT FORM</button>
+					<button class="formBtn" type="submit">SEND A REQUEST</button>
 				</div>
 				<img class="woman" src="images/woman.png" alt="">
 			</form>
@@ -68,9 +75,9 @@
 	</div>
 	<footer>
 		<ul class="lowerNav">
-			<li><a href="">consectetur</a></li>
-			<li><a href="">adipiscing</a></li>
-			<li><a href="">tempor</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Advantages</a></li>
+			<li><a href="">Contacts</a></li>
 		</ul>
 		<div class="footerLow">
 			<div class="footerLogo">
@@ -166,7 +173,7 @@
 				<a href="">Privacy policy</a>
 			</div>
 			<div class="footerOrder">
-				<button class="footerBtn">ORDER</button>
+				<button class="orderBtnfooterBtn">ORDER</button>
 				<a href="">Terms of Use</a>
 			</div>
 		</div>

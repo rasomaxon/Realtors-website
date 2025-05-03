@@ -38,6 +38,7 @@ header.scrolled {
 	font-size: 36px;
 	font-weight: 100;
 }
+
 .menu {
 	display: flex;
 	align-items: center;
@@ -49,7 +50,19 @@ header.scrolled {
 	font-style: italic;
 	text-transform: uppercase;
 }
+a:hover {
+	color: #D5C9BE;
+}
 
+.burger {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	z-index: 11;
+}
 
 .mainContent {
 	position: relative;
@@ -59,7 +72,7 @@ header.scrolled {
 .mainAd {
 	display: flex;
 	justify-content: space-between;
-	height: 1000px;
+	min-height: 1000px;
 	background-color: #222222;
 	margin-bottom: 100px;
 }
@@ -70,6 +83,7 @@ header.scrolled {
 
 .mainAd_text {
 	width: 60%;
+	min-height: 1000px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -115,7 +129,6 @@ header.scrolled {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-
 .listNumbers {
 	font-size: 40px;
 	padding-top: 6px;
@@ -132,6 +145,11 @@ header.scrolled {
 	font-size: 24px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
+}
+
+.orderBtn:hover {
+	background-color: #cdcccc;
+	cursor: pointer;
 }
 
 .MB_btn {
@@ -289,7 +307,7 @@ header.scrolled {
 	bottom: 0;
 	right: 200px;
 	z-index: 0;
-	height: 700px;
+	height: 658px;
 }
 
 
@@ -359,4 +377,347 @@ footer {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	color: #D5C9BE;
+}
+
+@media (max-width: 768px) {
+	header {
+		padding: 10px;
+	}
+	.burger {
+		display: flex;
+	}
+	.logo {
+		display: flex;
+	}
+	nav {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		height: 100vh;
+		background-color: #222222;
+		backdrop-filter: blur(6px);
+		transition: right 0.3s ease-in-out;
+		z-index: 10;
+		padding-top: 80px;
+	}
+	nav.active {
+		right: 0;
+	}
+
+	.menu {
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 20px;
+		padding: 20px;
+	}
+	.menu a {
+		font-size: 24px;
+	}
+
+	.mainAd {
+		background: 
+			linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+			url("images/apart1.png");
+		background-size: cover;
+		height: 500px;
+		margin-bottom: 50px;
+	}
+
+	.mainAd img {
+		display: none;
+	}
+
+	.mainAd_text {
+		width: 100%;
+		color: #fff;
+		box-sizing: border-box;
+		padding: 80px 20px;
+	}
+
+	.mainAd_text h1 {
+		font-size: 40px;
+		width: 200px;
+		margin-bottom: 10px;
+	}
+
+	.mainAd_text p {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.adList {
+		display: none;
+	}
+
+	.orderBtn {
+		height: 50px;
+		width: 200px;
+		border-radius: 4px;
+		font-weight: 200;
+	}
+
+	.middleBlock {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.middleBlock img {
+		display: none;
+	}
+
+	.MB_list {
+		padding: 0 10px;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+	.MB_list li {
+		padding: 10px 10px 10px 35px;
+		font-size: 20px;
+	}
+	.MB_list li::before {
+		width: 30px;
+		height: 30px;
+	}
+	.MB_btn {
+		margin-top: 20px;
+	}
+	.lowerBlock {
+		margin: 20px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.formBlock {
+		width: 95%;
+		border-radius: 10px;
+		height: 300px;
+	}
+
+	.formContainer {
+		width: 100%;
+		height: 296px;
+		background :#fff;
+		padding: 0;
+		justify-content: space-around;
+		gap: 10px;
+		padding: 10px 10px;
+		border-radius: 8px;
+	}
+
+	.formBlock h1 {
+		color: #38535D;
+		font-size: 20px;
+		font-weight: 100;
+		margin-bottom: 0;
+	}
+
+	.formField {
+		width: 100%;
+		height: 40px;
+		border-radius: 4px;
+		margin-bottom: 5px;
+		padding-left: 5px;
+		font-size: 18px;
+	}
+
+	.formField:focus {
+		border: 2px solid #adadad;
+	}
+
+	.formCheckbox {
+		font-size: 19px;
+		gap: 10px;
+		margin: 0;
+	}
+
+	.formBtn {
+		width: 100%;
+		height: 50px;
+		background-color: #282829;
+		border: none;
+		color: #fff;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
+		border-radius: 4px;
+	}
+
+	.formBtn:hover {
+		cursor: pointer;
+		background-color: #222222;
+	}
+
+	.formAppart {
+		display: none;
+	}
+	.woman {
+		display: none;
+	}
+	footer {
+		margin-top: 50px;
+	}
+	.lowerNav {
+		width: 100%;
+		flex-direction: column;
+		font-size: 14px;
+		gap: 20px;
+		height: 90px;
+		padding: 20px 0;
+	}
+
+	.footerLow {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.footerLogo {
+		font-size: 20px;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.footerSocials {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.socials {
+		display: flex;
+		gap: 10px;
+	}
+
+	.footerOrder {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footerBtn {
+		width: 80px;
+		height: 25px;
+		font-style: normal;
+		font-size: 14px;
+	}
+
+	.footerLow a {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1500px){
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px 20px;
+	}
+	.menu {
+		gap: 50px;
+		padding: 10px 0;
+	}
+	.mainAd_text {
+		padding: 100px 0 50px 20px;
+	}
+	.mainAd_text h1 {
+		font-size: 50px;
+	}
+
+	.mainAd_text p {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.adList {
+		gap: 20px;
+		margin-bottom: 25px;
+	}
+
+	.adList li {
+		gap: 5px;
+		font-size: 20px;
+		padding-left: 40px;
+	}
+
+	.adList li::before {
+		width: 25px;
+		height: 25px;
+	}
+
+	.listNumbers {
+		font-size: 22px;
+	}
+	.MB_list {
+		padding: 0 20px;
+	}
+
+	.MB_list li {
+		font-size: 20px;
+	}
+
+	.formBlock {
+		position: relative;
+		display: flex;
+		width: 95%;
+		height: auto;
+	}
+
+	.formContainer {
+		padding: 10px 20px;
+		border-radius: 28px;
+	}
+
+	.formBlock h1 {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+
+	.formField {
+		width: 50%;
+		height: 50px;
+		border-radius: 4px;
+		margin-bottom: 10px;
+		padding-left: 15px;
+		font-size: 20px;
+	}
+
+	.formBtn {
+		width: 50%;
+		height: 50px;
+		font-size: 20px;
+		border-radius: 4px;
+	}
+
+	.woman {
+		right: 50px;
+		height: 425px;
+	}
+
+	.footerLow {
+		padding: 40px 20px;
+		height: 250px;
+		justify-content: space-around;
+	}
+
+	.socials {
+		gap: 20px;
+	}
+
+	.footerBtn {
+		width: 100px;
+		height: 40px;
+		font-size: 18px;
+		font-weight: 100;
+	}
+
+	.footerLow a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		color: #D5C9BE;
+	}
 }
