@@ -81,7 +81,7 @@ a:hover {
 	object-fit: cover;
 }
 
-.mainAd_text {
+.mainAdText {
 	width: 60%;
 	min-height: 1000px;
 	display: flex;
@@ -91,13 +91,13 @@ a:hover {
 	padding: 270px 0 50px 162px;
 	box-sizing: border-box;
 }
-.mainAd_text h1 {
+.mainAdText h1 {
 	font-size: 80px;
 	font-weight: 100;
 	line-height: 120%;
 	margin-bottom: 20px;
 }
-.mainAd_text p {
+.mainAdText p {
 	font-size: 50px;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-bottom: 64px;
@@ -152,7 +152,7 @@ a:hover {
 	cursor: pointer;
 }
 
-.MB_btn {
+.MBbtn {
 	width: 100%;
 	height: 78px;
 	font-size: 20px;
@@ -168,13 +168,13 @@ a:hover {
 	height: 724px;
 	object-fit: cover;
 }
-.MB_list {
+.MBlist {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 0 53px;
 }
-.MB_list li {
+.MBlist li {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -183,7 +183,7 @@ a:hover {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #fff;
 }
-.MB_list li::before {
+.MBlist li::before {
 	content: "";
 	position: absolute;
 	left: 0px;
@@ -427,20 +427,20 @@ footer {
 		display: none;
 	}
 
-	.mainAd_text {
+	.mainAdText {
 		width: 100%;
 		color: #fff;
 		box-sizing: border-box;
 		padding: 80px 20px;
 	}
 
-	.mainAd_text h1 {
+	.mainAdText h1 {
 		font-size: 40px;
 		width: 200px;
 		margin-bottom: 10px;
 	}
 
-	.mainAd_text p {
+	.mainAdText p {
 		font-size: 20px;
 		margin-bottom: 10px;
 	}
@@ -466,21 +466,21 @@ footer {
 		display: none;
 	}
 
-	.MB_list {
+	.MBlist {
 		padding: 0 10px;
 		align-items: center;
 		margin-bottom: 50px;
 	}
 
-	.MB_list li {
+	.MBlist li {
 		padding: 10px 10px 10px 35px;
 		font-size: 20px;
 	}
-	.MB_list li::before {
+	.MBlist li::before {
 		width: 30px;
 		height: 30px;
 	}
-	.MB_btn {
+	.MBbtn {
 		margin-top: 20px;
 	}
 	.lowerBlock {
@@ -621,14 +621,14 @@ footer {
 		gap: 50px;
 		padding: 10px 0;
 	}
-	.mainAd_text {
+	.mainAdText {
 		padding: 100px 0 50px 20px;
 	}
-	.mainAd_text h1 {
+	.mainAdText h1 {
 		font-size: 50px;
 	}
 
-	.mainAd_text p {
+	.mainAdText p {
 		font-size: 30px;
 		margin-bottom: 30px;
 	}
@@ -652,11 +652,11 @@ footer {
 	.listNumbers {
 		font-size: 22px;
 	}
-	.MB_list {
+	.MBlist {
 		padding: 0 20px;
 	}
 
-	.MB_list li {
+	.MBlist li {
 		font-size: 20px;
 	}
 
